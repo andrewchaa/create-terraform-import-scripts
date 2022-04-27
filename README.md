@@ -2,7 +2,8 @@
 
 
 ```
-node write-imports.js ./state.tfstate ./dev-plan.txt dev eu-west-1
+node write-imports.js :state_file, :plan_file :tf_module_directory :env :region
+node write-imports.js ./state.tfstate ./dev-plan.txt api dev eu-west-1
 ```
 
 It reads the terraform state file and the plan file and then generate import scripts which you can run.
